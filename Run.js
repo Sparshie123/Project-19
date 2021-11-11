@@ -38,6 +38,7 @@ ground.velocityX=-(4+3*score/100)
 score=score = Math.round(getFrameRate()/60) 
 if(player.isTouching(monster||meteor)) {
     meteor.visible = false
+    player.remove()
     ground.velocityX=0 
     backdrop.velocity=0
     monster.velocityX=0
